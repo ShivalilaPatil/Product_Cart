@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Product Profile</title>
+
+  </head>
+
+  <body>
+    <!-- Your code goes here -->
+    <div class="container">
+      <!-- card left start -->
+      <section class="card-det card-left">
+        <img src="Assets/Images/poster-1.png" alt="Product Img" class="img-1" />
+        <div class="img-line">
+          <img
+            src="Assets/Images/poster-2.png"
+            alt="Product Img"
+            class="img-l-2"
+          />
+          <img
+            src="Assets/Images/poster-3.png"
+            alt="Product Img"
+            class="img-l-2"
+          />
+          <img
+            src="Assets/Images/poster-4.png"
+            alt="Product Img"
+            class="img-l-2"
+          />
+          <img
+            src="Assets/Images/poster-5.png"
+            alt="Product Img"
+            class="img-l-2"
+          />
+        </div>
+      </section>
+      <!-- card left end -->
+
+      <!-- card right start -->
+      <section class="card-det card-right">
+        <div class="div-rig-1">
+          <small class="title div-title"></small>
+          <h3 class="title-1"></h3>
+        </div>
+        <hr  class="line-br"/>
+        <div class="div-rig-2">
+          <div>
+            <span class="price"></span>
+            <span class="price-off"><sup></sup></span>
+          </div>
+          <h3 class="price-del"><del></del></h3>
+        </div>
+        <hr  class="line-br"/>
+        <div class="div-rig-3">
+          <small class="div-title">Choose a Color</small>
+          <div class="color-plt">
+            <button class="col-item plt1" onclick="getColor('Yellow')">&#10003;</button>
+            <button class="col-item plt2" onclick="getColor('Green')">&#10003;</button>
+            <button class="col-item plt3" onclick="getColor('Blue')">&#10003;</button>
+            <button class="col-item plt4" onclick="getColor('Pink')">&#10003;</button>
+          </div>
+        </div>
+        <hr class="line-br">
+        <div class="div-rig-4">
+          <small class="div-title">Choose a Size</small>
+          <!-- ṣizes pallette -->
+          <div class="size-plt">
+            <div class="size-item" onclick="getSize('Small')">
+                <input type="radio" name="size" id="small"> 
+                <label for="small"></label>
+            </div>
+            <div class="size-item" onclick="getSize('Medium')">
+                <input type="radio" name="size" id="medium">
+                <label for="medium"></label>
+            </div>
+            <div class="size-item" onclick="getSize('Large')">
+                <input type="radio" name="size" id="large"> 
+                <label for="large"></label>
+            </div>
+            <div class="size-item" onclick="getSize('Extra Large')">
+                <input type="radio" name="size" id="xl">
+                <label for="xl"></label>
+            </div>
+            <div class="size-item" onclick="getSize('XXL')">
+                <input type="radio" name="size" id="xxl">
+                <label for="xxl"></label>
+            </div>
+          </div>
+          <!-- ṣizes pallette end -->
+
+          <div class="size-more-info">
+            <div class="quantity-box" >
+                <button class="btn-increment qua-ele" onclick="Decrement()">-</button>
+                <input class="qua-ele" id="quan-input" type="text" value="1">
+                <button class="btn-decrement qua-ele" onclick="Increment()">+</button>
+            </div>
+            <div class="add-cart" onclick="proDetail()">&#128274; Add To Cart</div>
+          </div>
+          <div class="ord-det" ></div>
+
+        </div>
+        <hr class="line-br">
+        <div class="div-rig-5">
+            <p class="cart-exp">
+                The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+            </p>
+        </div>
+      </section>
+      <!-- card right end -->
+    </div>
+    <!-- Happy coding 😊 -->
+
+    <!-- external JS file -->
+    <script src="./script.js"></script>
+  </body>
+</html>
